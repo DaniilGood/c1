@@ -24,15 +24,17 @@ int IndexOf(int[] collection, int find)
 {
     int size = collection.Length;
     int index = 0;
+    int position = -1;
     while(index<size)
     {
         if(collection[index]== find)
         {
-            Console.WriteLine(index);
+            position = index;
             break;
         }
         index++;
     }
+    Console.WriteLine(position);
     return index;
 }
 
